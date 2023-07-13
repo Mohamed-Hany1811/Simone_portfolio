@@ -1,0 +1,1101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #20c997;
+}
+
+
+/* this is the begging of the home section */
+/* start with the nav  */
+
+
+header {
+    position: fixed;
+    background-color: #4c4d4d93;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3333333f;
+    width: 100%;
+}
+
+#home header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+header .hidden-icons {
+    opacity: 0;
+}
+
+header .nav-icon {
+    display: none;
+}
+
+header .nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+header .nav ul li {
+    padding: .5rem 1rem;
+
+}
+
+header .nav ul li a {
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.9);
+    transition: all 0.2s ease;
+}
+
+header .nav ul li a:hover {
+    color: #20c997;
+}
+
+/* start of home img */
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+
+
+#home .home-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 21, 22, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+#home .home-content {
+    color: #fff;
+    line-height: 2rem;
+    font-size: xx-large;
+    font-weight: 900;
+line-height: 1.5;
+
+
+}
+
+#home .home-content .home-challenge {
+    position: relative;
+    overflow: hidden;
+    transition: all 2s 2s;
+
+
+
+
+
+}
+
+
+
+#home .home-content .home-challenge .s1::after {
+    content: "Designer|";
+    animation: hide 4s infinite;
+
+}
+
+@keyframes hide{
+    0%{
+        content: "Designe|";
+
+    }
+    3%{
+      content: "Design|";
+
+    }
+    6%{
+        content: "Desig|";
+
+    }
+    9%{
+        content: "Desi|";
+
+    }
+    12%{
+        content: "Des|";
+
+    }
+    15%{
+        content: "De|";
+
+    }
+    18%{
+        content: "D|";
+
+    }
+    21%{
+        content: "De|";
+
+    }
+    24%{
+        content: "Dev|";
+
+    }
+    27%{
+        content: "Deve|";
+
+    }
+    30%{
+        content: "Devel|";
+
+    }
+    33%{
+        content: "Develo|";
+
+    }
+    36%{
+        content: "Develop|";
+
+    }
+    39%{
+        content: "Develope|";
+
+    }
+
+    42%{
+        content: "Developer|";
+
+    }
+    45%{
+        content: "Develope|";
+
+    }
+    48%{
+        content: "Develop|";
+
+    }
+    51%{
+        content: "Develo|";
+
+    }
+    54%{
+        content: "Devel|";
+
+    }
+    57%{
+        content: "Deve|";
+
+    }
+    60%{
+        content: "Dev|";
+
+    }
+    63%{
+        content: "De|";
+
+    }
+    66%{
+        content: "D|";
+
+    }
+    69%{
+        content: "De|";
+
+    }
+    72%{
+        content: "Des|";
+
+    }
+    75%{
+        content: "Desi|";
+
+    }
+    78%{
+        content: "Desig|";
+
+    }
+    81%{
+        content: "Design|";
+
+    }
+    84%{
+        content: "Designe|";
+
+    }
+
+
+}
+
+
+
+
+#home .home-container .home-content button {
+    padding: 0.8rem 2.6rem;
+    background-color: transparent;
+    font-weight: 500;
+    border: 2px solid #20c997;
+    color: #20c997;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-radius: 50rem;
+}
+
+#home .home-container .home-content button:hover {
+    background-color: #20c997;
+    border-color: #20c997;
+    color: #fff;
+}
+
+
+.next-icon {
+    height: 3rem;
+    width: 1.5rem;
+    border-radius: 1.5rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    opacity: 1;
+
+}
+
+.next-icon a {
+    opacity: 1;
+    color: #fff;
+    font-size: larger;
+
+
+}
+
+.next-icon a i {
+    font-size: larger;
+    animation: next 2s infinite;
+    transform: translateY(0%);
+    color: #fff;
+    opacity: 1;
+
+
+
+}
+
+@keyframes next {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+
+    }
+
+
+}
+
+.settings {
+    font-weight: 900;
+    font-size: 1.25rem;
+    background-color: #555;
+    width: 2rem;
+    height: 2rem;
+    position: FIXED;
+    text-align: center;
+    z-index: 9999;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px 0 0 4px;
+}
+
+#home .settings a i {
+    color: rgb(255, 255, 255);
+
+
+}
+
+
+/* the end of home styling and the begging of the about section */
+
+
+#about {
+    width: 85%;
+    margin: 5rem auto 5rem auto;
+    text-align: center;
+}
+
+#about .about-head-container,
+#what-do .what-do-head-container,
+#resume .resume-head-container,
+#portfolio .portfolio-head-container,
+#client .client-head-container,
+#contact .contact-head-container{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#about .about-head-container .about-back,
+#what-do .what-do-head-container .what-do-head-back,
+#resume .resume-head-container .resume-head-back,
+#portfolio .portfolio-head-container .portfolio-head-back,
+#client  .client-head-container .client-head-back,
+#contact .contact-head-container .contact-head-back{
+
+
+
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+    text-align: center;
+    z-index: 0;
+    color: #252b3340;
+    opacity: 0.4;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.5;
+    font-size: 4rem;
+}
+
+#about .about-head-container .about-head,
+#what-do .what-do-head-container .what-do-head,
+#resume .resume-head-container .resume-head,
+#portfolio .portfolio-head-container .portfolio-head,
+#client  .client-head-container .client-head,
+#contact .contact-head-container .contact-head{
+
+
+    position: relative;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    width: 100%
+}
+
+#about .about-head-container .about-head::after,
+#what-do .what-do-head-container .what-do-head::after,
+#resume .resume-head-container .resume-head::after, 
+#portfolio .portfolio-head-container .portfolio-head::after,
+#client  .client-head-container.client-head::after,
+#contact .contact-head-container .contact-head::after{
+
+    content: "";
+    width: 15%;
+    height: 0.2rem;
+    background-color: #20c997;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+
+
+
+
+#about .about-content-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #4c4d4d;
+
+
+}
+
+#about .about-content-container .about-details {
+    width: 60%;
+    line-height: 1.5;
+
+}
+
+#about .about-content-container .about-details h2 {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+#about .about-content-container .about-details p {
+    margin-bottom: 1rem;
+}
+
+#about .about-content-container .about-info {
+    width: 30%;
+    line-height: 1.5;
+}
+
+#about .about-content-container .about-info ul {
+    list-style: none;
+    padding-bottom: 1rem;
+
+}
+
+#about .about-content-container .about-info ul li {
+    padding: .7rem;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.4);
+}
+
+#about .about-content-container .about-info ul li a {
+    color: #20c997;
+    text-decoration: none;
+}
+
+#about .about-content-container .about-info ul li a:hover {
+    color: #1baa80;
+}
+
+#about .about-content-container .about-info a button {
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    border-width: 2px;
+    background-color: #20c997;
+    color: #fff;
+    border-radius: 1.3rem;
+    border: none;
+}
+
+
+#about .about-content-container .about-info a button:hover {
+
+    background-color: #1baa80;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 30%);
+}
+
+
+.up-icon{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #272b2b62;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.up-icon a{
+    color: #fff;
+}
+
+.up-icon:hover{
+    background-color: #20c997;
+}
+
+
+/* the end of the about content and the start of the counter */
+
+#about .counter {
+    display: flex;
+    text-align: center;
+    color: #4c4d4d;
+    margin-top: 10rem;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#about .counter .counter-item {
+    width: 25%;
+    justify-content: space-between;
+    border-right: 1px solid #4c4d4d5e;
+}
+
+#about .counter .item-s {
+    border-right: none;
+}
+
+
+/* the start of the what to do section */
+
+
+#what-do {
+    width: 100%;
+    margin: auto;
+    background-color: #f8f9fa;
+}
+
+
+#what-do .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+
+
+}
+
+#what-do .services .services-item {
+    display: flex;
+    width: 47%;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+}
+
+#what-do .services .services-item .list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1baa80;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    margin-right: 2rem;
+    box-shadow: 0 0px 2px grey;
+    font-size: xx-large;
+    border-radius: 10px;
+
+}
+
+
+#what-do .services .services-item .list ul {
+    list-style: none;
+
+}
+
+
+
+/* the end of the what to do and the start of resume */
+
+
+#resume {
+    width: 85%;
+    margin: 5rem auto;
+}
+
+
+#resume .resume-content-container {
+    display: flex;
+    line-height: 1.6;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#resume .resume-content-container .education1,
+#resume .resume-content-container .education2,
+#resume .resume-content-container .education3,
+#resume .resume-content-container .exp1,
+#resume .resume-content-container .exp2,
+#resume .resume-content-container .exp3 {
+    border: 1px solid #dee2e6;
+    width: 90%;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: .25rem;
+
+
+}
+#resume .resume-content-container .date {
+    background-color: #20c997;
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+
+}
+
+#resume .resume-content-container .place {
+    color: red;
+    padding: 1rem auto 1rem;
+}
+
+
+
+
+
+#resume .resume-skills{
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+#resume .resume-skills .skills-cont{
+    width: 48%;
+    margin: auto;
+
+
+}
+#resume .resume-skills .skills-cont p{
+    float: left;
+}
+
+#resume .resume-skills .skills-cont span{
+    float: right;
+}
+
+.clr{
+    clear: both;
+}
+
+#resume .resume-skills .skills-cont .skill1 .skill1-counter-cont{
+    background-color: #dddddd;
+    width: 100%;
+    height: .7rem;
+    border-radius: .35rem;
+
+}
+
+#resume .resume-skills .skills-cont .skill2 .skill2-counter-cont{
+    background-color: #dddddd;
+    width: 100%;
+    height: .7rem;
+    border-radius: .35rem;
+
+}
+
+#resume .resume-skills .skills-cont .skill3 .skill3-counter-cont{
+    background-color: #dddddd;
+    width: 100%;
+    height: .7rem;
+    border-radius: .35rem;
+
+}
+
+#resume .resume-skills .skills-cont .skill4 .skill4-counter-cont{
+    background-color: #dddddd;
+    width: 100%;
+    height: .7rem;
+    border-radius: .35rem;
+
+}
+
+#resume .resume-skills .skills-cont .skill5 .skill5-counter-cont{
+    background-color: #dddddd;
+    width: 100%;
+    height: .7rem;
+    border-radius: .35rem;
+
+}
+
+#resume .resume-skills .skills-cont .skill6 .skill6-counter-cont{
+    background-color: #dddddd;
+    width: 100%;
+    height: .7rem;
+    border-radius: .35rem;
+
+}
+
+#resume .resume-skills .skills-cont .skill1 .skill1-counter-cont .skill1-counter{
+    background-color: #20c997;
+    width: 65%;
+    height: .7rem;
+    border-radius: .35rem;
+
+
+}
+
+
+#resume .resume-skills .skills-cont .skill2 .skill2-counter-cont .skill2-counter{
+    background-color: #20c997;
+    width: 95%;
+    height: .7rem;
+    border-radius: .35rem;
+
+
+}
+
+
+#resume .resume-skills .skills-cont .skill3 .skill3-counter-cont .skill3-counter{
+    background-color: #20c997;
+    width: 80%;
+    height: .7rem;
+    border-radius: .35rem;
+
+
+}
+
+
+#resume .resume-skills .skills-cont .skill4 .skill4-counter-cont .skill4-counter{
+    background-color: #20c997;
+    width: 70%;
+    height: .7rem;
+    border-radius: .35rem;
+
+
+}
+
+
+#resume .resume-skills .skills-cont .skill5 .skill5-counter-cont .skill5-counter{
+    background-color: #20c997;
+    width: 65%;
+    height: .7rem;
+    border-radius: .35rem;
+
+
+}
+
+
+#resume .resume-skills .skills-cont .skill6 .skill6-counter-cont .skill6-counter{
+    background-color: #20c997;
+    width: 99%;
+    height: .7rem;
+    border-radius: .35rem;
+
+
+}
+
+
+#resume .resume-skills .skills-cont{
+    margin: 1rem auto;
+} 
+#resume .resume-skills .skills-cont div{
+    margin: 2rem 0;
+} 
+
+#resume .btn{
+    display: flex;
+    justify-content: center;
+}
+#resume .btn button{
+
+    color: #6c757d;
+    background-color: transparent;
+    border: 1px solid #6c757d ;
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    
+    border-radius: 50rem
+}
+
+#resume .btn button:hover{
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/*  the end of the resume section and the beginning of the portfolio section*/
+#portfolio{
+    width: 85%;
+    margin: auto;
+}
+
+#portfolio .portfolio-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#portfolio .portfolio-links ul{
+    display: flex;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+#portfolio .portfolio-links ul li a{
+    padding: 1rem;
+    text-decoration: none;
+    color:#7b8084;
+}
+#portfolio .portfolio-links ul li a:hover{
+    color: #20c997;
+}
+#portfolio .portfolio-links ul li a:active{
+    color: #20c997;
+    border-bottom: 1px solidd #20c997;
+}
+
+
+
+ .portfolio-photos-cont{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: auto;
+}
+ .group{
+
+    width: 32%;
+    flex-wrap: nowrap;
+ 
+
+}
+.pic{
+    width: 100%;
+    margin: 1rem auto;
+    position: relative;
+
+}
+.pic img{
+    width: 100%;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    transition: all 1s;
+    
+}
+
+.pic:hover .layer{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.473);
+   
+
+}
+
+/*   the end of the portfolio section and the start of client  */
+
+
+
+#client{
+    width: 85%;
+    margin: 6rem auto;
+}
+
+
+#client .comments-container{
+    margin: 2rem 0 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.com{
+    background-color: #f8f9fa;
+    padding: 3rem 2rem;
+    margin: 1rem;
+    
+    line-height: 1.4;
+
+}
+
+.com img{
+    border-radius: 50%;
+    float: left;
+    margin: 0 2rem;
+}
+
+
+.com .comdetails{
+    color: #6c757d;
+    margin-bottom: 1rem;
+
+}
+.com .comdetails h3{
+    color: #000;
+
+}
+
+.com p{
+    margin-bottom: 1.5rem;
+}
+
+.rating{
+    color: #ffc107;
+}
+
+
+
+/* the end of the client section and the begining of the contact section */
+#contact{
+
+    background-color: #f8f9fa;
+    margin:3rem 0;
+}
+#contact .contact-container{
+    width: 85%;
+    margin:auto;
+
+}
+
+
+ .address{
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.address p{
+    color: #6c757d;
+    margin-bottom: .5rem;
+}
+
+
+.info{
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.contact-icon{
+    color: #20c997;
+    margin-right: 1rem;
+}
+
+
+
+
+
+.contact-details-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-details-container .contact-details{
+    width: 20%;
+
+}
+
+.contact-details-container .contact-form{
+    width: 75%;
+
+}
+
+
+.inputs-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+.inputs-container .input-name{
+    width: 49%;
+}
+.inputs-container .input-name #g-name{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.inputs-container .input-Email{
+    width: 49%;
+}
+.inputs-container .input-Email #g-mail{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+
+}
+.inputs-container .input-message {
+    width: 100%;
+}
+
+.inputs-container .input-message #g-message{
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.inputs-container input, textarea{
+    border: 1px solid #dae1e3;
+    font-size: 16px;
+    color: #656565;
+    border-radius: .25rem;
+}
+#g-name:focus-visible,
+#g-mail:focus-visible,
+#g-message:focus-visible{
+   outline: 0;
+    border: 1px solid #dae1e3;
+    box-shadow: 0.1px 0.1px 3px rgb(28 189 255);
+
+}
+
+
+.input-button{
+    display: flex;
+    width: 100%;
+    margin: 3rem 0;
+    justify-content: center;
+    align-content: center;
+}
+.input-button button{
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    border-width: 2px;
+    background-color: #20c997;
+    color: #fff;
+    border-radius: 1.3rem;
+    border: none;
+
+}
+
+
+.input-button button:hover{
+
+    background-color: #1baa80;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 30%);
+
+}
+
+
+
+/* the end of the contact and start of the footer */
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+    width: 85%;
+    margin: auto;
+}
+
+
+.foot-links a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1rem;
+
+}
+.foot-links a:hover{
+    color: #20c997;
+
+
+}
+
+.brd-right{
+    border-right: thin solid #6c757d;
+}

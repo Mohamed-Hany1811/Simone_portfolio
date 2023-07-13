@@ -1,0 +1,228 @@
+
+/* medium screens */
+@media screen and (max-width: 800px) and (min-width: 351px) {
+   
+html{
+    font-size: 14px;
+}   
+    .hidden-icons{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-icon{
+      display: flex !important;
+      align-items: center;
+        color: #fff;
+    }
+
+
+
+
+
+    #about .about-head-container{
+        width:100%;
+    }
+
+
+    #about .about-content-container{
+        flex-wrap: wrap;
+
+    }
+    #about .about-content-container .about-details{
+        width: 100%;
+    }
+    #about .about-content-container .about-info{
+        width: 100%;
+    }
+
+
+    #about .counter{
+        flex-wrap: wrap;
+    }
+    #about .counter .counter-item{
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+
+    #about .counter .item2{
+        border-right:none;
+        border-bottom: 1px solid #4c4d4d5e;
+
+    }
+    #about .counter .item1{
+        border-bottom: 1px solid #4c4d4d5e;
+
+    }
+    #what-do .services .services-item{
+        width: 100%;
+    }
+
+    #resume  .resume-content-container{
+        flex-wrap: wrap;
+
+        }
+            #resume  .resume-content-container .education{
+        width: 100%;
+    }
+
+    #resume .resume-skills{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #resume .resume-skills .skills-cont{
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .comments-container{
+       
+        flex-direction: column;
+    }
+    .comments-container{
+        width: 100%;
+    }
+
+
+ #contact .contact-container .contact-details-container{
+    flex-wrap: wrap;
+ }
+ #contact .contact-container .contact-details-container .contact-details{
+    width: 100%;
+
+ }
+ #contact .contact-container .contact-details-container .contact-form{
+    width: 100%;
+    margin:3rem 0 3rem;
+
+ }
+
+
+
+.inputs-container .input-name{
+    width: 100%;
+}
+.inputs-container .input-Email{
+    width: 100%;
+}
+
+footer{
+    flex-direction: column;
+    text-align: center;
+}
+.copyright{
+    width: 100%;
+   margin: 1rem 0;
+}
+.foot-links{
+    width: 100%;
+}
+
+
+}
+
+
+
+    /* for small screens  */
+
+@media screen and (max-width: 350px) {
+    html{
+        font-size: 12px;
+    }
+    header{
+        display: block;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    .hidden-icons{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-icon{
+      display: block !important;
+      align-items: center;
+        color: #fff;
+        width: 100%;
+       min-width: 100%;
+    }
+
+    #what-do .services .services-item{
+        width: 100%;
+    }
+
+    
+    #resume  .resume-content-container{
+        flex-wrap: wrap;
+        
+        }
+            #resume  .resume-content-container .education{
+        width: 100%;
+    }
+
+    #resume .resume-skills{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #resume .resume-skills .skills-cont{
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .portfolio-photos-cont{
+        flex-wrap: wrap;
+    }
+    .group{
+        width: 100%;
+    }
+
+    .comments-container{
+        flex-wrap: wrap;
+    }
+    .comments-container{
+        width: 100%;
+    }
+
+
+
+
+
+
+    #contact .contact-container .contact-details-container{
+        flex-wrap: wrap;
+     }
+     #contact .contact-container .contact-details-container .contact-details{
+        width: 100%;
+    
+     }
+     #contact .contact-container .contact-details-container .contact-form{
+        width: 100%;
+        margin:3rem 0 3rem;
+    
+     }
+    
+    
+    
+    .inputs-container .input-name{
+        width: 100%;
+    }
+    .inputs-container .input-Email{
+        width: 100%;
+    }
+    
+    
+
+
+}
+
+
